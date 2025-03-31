@@ -1,0 +1,17 @@
+Okay, the user wants to build an AI-powered business management app using Docker and Cursor IDE. They’ve gone through several iterations of the architecture, simplifying it by removing unnecessary components like the forum and switching to MongoDB. Now, they want a step-by-step guide using Cursor to develop, design, and deploy the app with multiple Docker containers.
+
+First, I need to make sure I cover all the core features: OCR, NLP, predictive analytics, MongoDB for storage, FastAPI backend, Flutter mobile app, and Docker setup. The user emphasized using Cursor's AI capabilities to speed up development, so I should integrate specific Cursor commands they can use.
+
+Starting with project setup. They need a clear directory structure. Using Cursor, they can generate the necessary files and Docker configurations. I'll outline the Docker services: backend, MongoDB, OCR, AI processor (NLP and predictions), and the mobile app. Since they mentioned minimal resources, using lightweight images like Alpine versions makes sense.
+
+Next, developing the backend with FastAPI. They’ll need CRUD endpoints for inventory and expenses. Cursor can help generate the FastAPI code and MongoDB models. The OCR service using EasyOCR should be a separate container. NLP and predictions are handled by another service, possibly using spaCy and RiverML for incremental learning.
+
+For the mobile app, Flutter is the choice. Guiding them to use Cursor to generate the camera integration and API calls will save time. The mobile app needs to communicate with the backend, so setting up the correct endpoints is crucial.
+
+Testing is important. I should include commands to run tests using pytest and ensure the Docker services are connected properly. Deployment instructions must be clear, especially exposing the backend on the local network so the mobile app can connect.
+
+Security aspects like JWT authentication and data encryption should be mentioned, even if basic. Maybe suggest using environment variables for secrets and Cursor’s AI to generate security configurations.
+
+Finally, maintenance tips like backups, updates, and monitoring resource usage with Docker stats. Also, mention how to scale services if needed, like adding more OCR workers.
+
+I need to structure this in a way that’s easy to follow, with code snippets and Cursor commands they can execute step-by-step. Making sure each part is explained but concise, so the user doesn’t get overwhelmed. Highlighting the use of Cursor’s AI to generate code and troubleshoot issues will streamline their workflow.
